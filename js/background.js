@@ -6,8 +6,6 @@ const images = [
 
 const todayImg = images[Math.floor(Math.random()*images.length)];
 
-const image = document.createElement("img");
+const Url = `/img/${todayImg}`;
 
-image.src = `/img/${todayImg}`;
-
-document.body.appendChild(image);
+document.body.style.backgroundImage = `url(${Url})`;
