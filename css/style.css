@@ -16,6 +16,8 @@ body {
 .flexbox {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .flexitem {
@@ -23,9 +25,24 @@ body {
     color: white;
 }
 
+.flexitem > input:first-child {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    color: white;
+    width: 18%;
+    height: 100%;
+}
+
+.flexitem > input::placeholder {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
 #clock {
     margin: 0;
-    font-size: 70px;
+    font-size: 5em;
 }
 
 #quote {
@@ -43,4 +60,8 @@ body {
 #quote , #weather {
     color: white;
     font-size: 20px;
+}
+
+ul {
+    list-style: none;
 }
